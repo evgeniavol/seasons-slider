@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seasons slider</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section>
+        <img src="images/winter.jpg" alt="winter" id="slider">
+        <ul class="nav">
+            <li><img onclick="seasonsSlider('images/winter.jpg')" src="images/winter.jpg" alt="winter"></li>
+            <li><img onclick="seasonsSlider('images/spring.jpg')" src="images/spring.jpg" alt="spring"></li>
+            <li><img onclick="seasonsSlider('images/summer.jpg')" src="images/summer.jpg" alt="summer"></li>
+            <li><img onclick="seasonsSlider('images/fall.jpg')" src="images/fall.jpg" alt="fall"></li>
+        </ul>
+        <h2>Seasons slider</h2>
+    </section>
+    <script>
+        function seasonsSlider(img) {
+            document.getElementById('slider').src = img;
+        }
+    </script>
+</body>
+</html>
